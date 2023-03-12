@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mcrchavez/DebeoAPI"
   },
-  "homepage": "https://github.com/mcrchavez/DebeoAPI#readme"
+  "homepage": "https://github.com/mcrchavez/DebeoAPI#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
