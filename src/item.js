@@ -4,6 +4,7 @@ class Item {
         this.name = name;
         this.desc = desc;
         this.price = price;
+        this.assignedTo_list = [];
     }
 
     get name() {
@@ -30,6 +31,10 @@ class Item {
     set price(price){
         this.price = price;
 
+    }
+
+    assign_To(assignedTo_list){
+        this.assignedTo_list = assignedTo_list;
     }
 
 
