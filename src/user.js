@@ -17,10 +17,10 @@ class User {
 
     //Setters
     set name(name) {
-
+        this.name = name;
     }
     set team(team) {
-
+        this.team = team;
     }
 
     // Methods
