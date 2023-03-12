@@ -1,0 +1,23 @@
+{
+  "name": "debeoapi_p2",
+  "version": "1.0.0",
+  "description": "CLI version of Debeo for CS 321 P2",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "test debeo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcrchavez/DebeoAPI.git#main"
+  },
+  "author": "Team 2 (Reva Hirave, Michael Chavez, Mo Mabrouk, Nick Ranz, Davina Lim)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcrchavez/DebeoAPI/issues"
+  },
+  "homepage": "https://github.com/mcrchavez/DebeoAPI/tree/main#readme",
+  "bin": {
+    "debeo": "./bin/index.js"
+  }
+  
+}
