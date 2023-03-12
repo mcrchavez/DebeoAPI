@@ -25,11 +25,21 @@ class User {
 
     // Methods
     join_team(team_id) {//needs additional checking
-      team = team;
+      if(Teams.has(team_id) == false){
+        return false;
+      }
+      else{
+        
+      }
 
     }
     leave_team(team_id) {
-      
+        if(Teams.has(team_id) == false){
+            return false;
+          }
+          else{
+            
+          }      
     }
     //updates individual and group history accordingly
     add_transaction(transaction) {
