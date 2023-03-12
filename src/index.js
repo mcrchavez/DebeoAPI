@@ -1,4 +1,5 @@
 // program to create a two dimensional array
+const Teams = new Set();
 
 function make2DArray(a, b) {
     let arr = [];

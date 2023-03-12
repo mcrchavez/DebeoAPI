@@ -24,8 +24,9 @@ class User {
     }
 
     // Methods
-    join_team(team_id) {
-      
+    join_team(team_id) {//needs additional checking
+      team = team;
+
     }
     leave_team(team_id) {
       
