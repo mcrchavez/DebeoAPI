@@ -5,7 +5,7 @@ class Transaction{
         transaction_counter = transaction_counter + 1;
         var transaction_id = transaction_counter;
         this.total = total;
-        var debt = debt;
+        var debt = 
         var date = date;
         this.paid_off = paid_off;
     }
@@ -19,6 +19,17 @@ class Transaction{
 
     set debt(debt_array){
         this.debt = debt_array;
+    }
+    set paid_off(paid_off){
+        this.paid_off = paid_off;
+    }
+
+    set_debt(userA, userB){
+
+    }
+
+    split_debt(user_collection, debt){
+
     }
 
 }
