@@ -1,3 +1,5 @@
+const { createTestScheduler } = require("jest");
+
 class Transaction{
     static transaction_counter = 0;
 
@@ -5,7 +7,7 @@ class Transaction{
         transaction_counter = transaction_counter + 1;
         var transaction_id = transaction_counter;
         this.total = total;
-        var debt = 
+        var debt = make2DArray(0, 0);
         var date = date;
         this.paid_off = paid_off;
     }
