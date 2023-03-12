@@ -1,9 +1,8 @@
 class Item {
-    #price;
     constructor(name, desc, price){
         this.name = name;
         this.desc = desc;
-        this.price = price;
+        var price = price;
         this.assignedTo_list = [];
     }
 
