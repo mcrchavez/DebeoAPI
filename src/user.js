@@ -33,6 +33,7 @@ class User {
             hold = Teams.at(team_id);
             this.id = hold.length + 1;
             hold.add_user(this);
+            return true;
           }      
 
     }
@@ -43,6 +44,7 @@ class User {
           else{
             hold = Teams.at(team_id);
             hold.remove_member(this.id);
+            return true;
           }      
     }
     //updates individual and group history accordingly
