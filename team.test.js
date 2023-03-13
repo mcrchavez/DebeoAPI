@@ -3,7 +3,7 @@ const team = require('./src/team');
 
 describe("Team", () => {
     beforeEach(() => {
-        const nick = new userInfo("Nick", "nick@email.com")
+        const nick = new User("Nick", "nick@email.com")
         add_user("nick@email.com", )
     })
 
