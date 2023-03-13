@@ -1,6 +1,11 @@
 class User {
+<<<<<<< HEAD
     constructor(name, email) {
       this.payment_history = new Array();
+=======
+    constructor(name, email, team) {
+      this.payment_history = new Array();//past transactions stored as array //an array of transactions
+>>>>>>> refs/remotes/origin/classes
       this.name = name;
       //this.id = id;
       this.email = email;
@@ -38,7 +43,7 @@ class User {
         if(Teams.at(team_id) === undefined){
             return false;
           }
-          else{
+        else{
             hold = Teams.at(team_id);
             this.id = hold.length + 1;
             hold.add_user(this);
@@ -50,7 +55,7 @@ class User {
         if(Teams.at(team_id) === undefined){
             return false;
           }
-          else{
+        else{
             hold = Teams.at(team_id);
             hold.remove_member(this.id);
             return true;
@@ -61,11 +66,13 @@ class User {
       this.payment_history.push(transaction);
     }
     toOwe(){
-
+        //sum how much user owes others
     }
     owed(){
-        
+        //sum how much user is owed by others
     }
-   
+    toString(){
+        return "["+ this.name + " : " + this.email+ "]"; 
+    }
     
   }
