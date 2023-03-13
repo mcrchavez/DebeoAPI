@@ -3,8 +3,18 @@ class Team{
         this.members = new Map(); //Our collection of users
         this.name = name;      // name of the team.
         this.email = email;
+        this.admin = null;
+
     }
 
+    set_admin(user){
+        this.admin = user;
+    }
+
+    get_admin(){
+        return admin
+    }
+    
     add_user(email,user){
         return this.members.add(user);
     }
