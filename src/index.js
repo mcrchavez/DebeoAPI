@@ -199,7 +199,17 @@ class Team{
     }
 
     toString(){
-        return "Team Name: " + this.name + this.members.entries.toString();
+        var str = ""
+        str += "Team Name: " + this.name + "\n";
+        for (let [key, value] of this.members){
+            if(key == this.admin){
+                str += "A:" + value.toString();
+            }
+            else{
+                str += + value.toString();
+            }
+        }
+        
     }
 }
 
