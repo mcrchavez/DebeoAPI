@@ -4,6 +4,7 @@ class Team{
         this.name = name;      // name of the team.
         this.id = id;
         this.admin = null;
+        this.count = 0;
 
     }
 
@@ -16,6 +17,10 @@ class Team{
     }
 
     add_user(user){
+        if(this.count == 0){
+            this.set_admin(user);
+        }
+        this.count += 1;
         return this.members.add(user);
     }
 
