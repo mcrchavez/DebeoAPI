@@ -1,8 +1,8 @@
 class Team{
-    constructor(name, email) {
+    constructor(name, id) {
         this.members = new Map(); //Our collection of users
         this.name = name;      // name of the team.
-        this.email = email;
+        this.id = id;
         this.admin = null;
 
     }
@@ -14,8 +14,8 @@ class Team{
     get_admin(){
         return admin
     }
-    
-    add_user(email,user){
+
+    add_user(user){
         return this.members.add(user);
     }
 
