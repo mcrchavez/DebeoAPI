@@ -35,11 +35,10 @@ class User {
     }
     leave_team(team_id) {
         if(Teams.has(team_id) == false){
-            return false;
-          }
-          else{
-            
-          }      
+          return false;
+        }else{
+          
+        }      
     }
     //updates individual and group history accordingly
     add_transaction(transaction) {
