@@ -1,34 +1,41 @@
 class User {
-    constructor(name, email) {
-      this.payment_history = new Array(); //an array of transactions
+    constructor(name, email, team) {
+      this.payment_history = new Array();//past transactions stored as array //an array of transactions
       this.name = name;
-      //this.id = id;
       this.email = email;
-      this.team = null;
+      this.team = team;//team user is a part of (can't be standalone)
     }
     // Getters
-    get name() {
+    get_name() {
       return this.name;
     }
-    get team() {
+    get_team() {
         return this.team;
     }
-    get team_members() {
-        return this.team.getMembers();
+
+    get id(){
+        return this.id;
     }
 
+    get_team_members() {
+        return this.team.getMembers();
+    }
+    get_email() {
+      return this.email;
+  }
+
     //Setters
-    set name(name) {
+    set_name(name) {
         this.name = name;
     }
-    set team(team) {
+    set_team(team) {
         this.team = team;
     }
 
     // Methods
-    join_team(team_id) {//needs additional checking
-        if(Teams.at(team_id) === undefined){
-            return false;
+    join_team(team_id) {
+        if(Teams.at(team_id) === undefined){//checks if team exists in global teams array
+            return false;//returns false if it doesn't exist
           }
         else{
             hold = Teams.at(team_id);
