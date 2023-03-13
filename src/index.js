@@ -199,6 +199,16 @@ class Team{
     }
 
     toString(){
+        str = ""
+        str += "Team Name: " + this.name + "\n";
+        for (let [key, value] of this.members){
+            if(key == this.admin){
+                str += "Admin: " + key + ", ID: " + value + "\n";
+            }
+            else{
+                str += "Name: " + key + ", ID: " + value + "\n";
+            }
+        }
         
     }
 }
