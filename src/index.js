@@ -199,7 +199,7 @@ class Team{
     }
 
     toString(){
-        
+        return "Team Name: " + this.name + this.members.entries.toString();
     }
 }
 
@@ -242,14 +242,14 @@ class Transaction{
 
 }
 var turtleTeam = new Team("turtles", 0123);
-console.log("Turtles before adding any users: " + turtleTeam.toString());
+console.log("Turtles before adding any users: " + turtleTeam.toString() + "\n");
 
 raph = new User("raph", "raph@turtles.com", turtleTeam);
 console.log("User Raph: " + raph.toString());
 turtleTeam.add_user(raph);
-console.log("Turtles after adding Raph: " + turtleTeam.toString());
+console.log("Turtles after adding Raph: " + turtleTeam.toString() + "\n");
 
 turtleTeam.add_user(new User("Donny", "donny@turtles.com", turtleTeam));
 turtleTeam.add_user(new User("Mikey", "mikey@turtles.com", turtleTeam));
 turtleTeam.add_user(new User("Leo", "leo@turtles.com", turtleTeam));
-console.log("Turtles after adding four members: " + turtleTeam.toString());
+console.log("Turtles after adding four members: " + turtleTeam.toString() + "\n");
