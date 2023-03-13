@@ -7,21 +7,24 @@ class User {
       this.team = null;
     }
     // Getters
-    get name() {
+    get_name() {
       return this.name;
     }
-    get team() {
+    get_team() {
         return this.team;
     }
-    get team_members() {
+    get_team_members() {
         return this.team.getMembers();
     }
+    get_email() {
+      return this.email;
+  }
 
     //Setters
-    set name(name) {
+    set_name(name) {
         this.name = name;
     }
-    set team(team) {
+    set_team(team) {
         this.team = team;
     }
 
