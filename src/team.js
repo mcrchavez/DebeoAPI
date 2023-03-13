@@ -1,18 +1,23 @@
 class Team{
-    constructor(name) {
-        this.members = new Set(); //Our collection of users
+    constructor(name, email) {
+        this.members = new Map(); //Our collection of users
         this.name = name;      // name of the team.
+        this.email = email;
     }
 
-    add_user(user){
+    add_user(email,user){
         return this.members.add(user);
     }
 
-    get_user(user){
-        return this.members.get(user);
+    get_user(email){
+        return this.members.get(email);
     }
 
     get_members(){
         return this.members;
+    }
+
+    has_user(email){
+        return this.members.has(user)
     }
 }
