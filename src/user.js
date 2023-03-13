@@ -1,6 +1,6 @@
 class User {
     constructor(name, email) {
-      this.payment_history = new Array();
+      this.payment_history = new Array(); //an array of transactions
       this.name = name;
       //this.id = id;
       this.email = email;
@@ -30,7 +30,7 @@ class User {
         if(Teams.at(team_id) === undefined){
             return false;
           }
-          else{
+        else{
             hold = Teams.at(team_id);
             this.id = hold.length + 1;
             hold.add_user(this);
@@ -42,7 +42,7 @@ class User {
         if(Teams.at(team_id) === undefined){
             return false;
           }
-          else{
+        else{
             hold = Teams.at(team_id);
             hold.remove_member(this.id);
             return true;
