@@ -202,7 +202,7 @@ class Team{
         var str = "";
         str += "\nTeam Name: " + this.name + "\n";
         for (let [key, value] of this.members){
-            if(key == this.admin){
+            if(value == this.admin){
                 str += "Admin: " + value + "\n";
             }
             else{
