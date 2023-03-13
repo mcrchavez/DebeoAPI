@@ -12,6 +12,11 @@ class User {
     get team() {
         return this.team;
     }
+
+    get id(){
+        return this.id;
+    }
+
     get team_members() {
         return this.team.getMembers();
     }
