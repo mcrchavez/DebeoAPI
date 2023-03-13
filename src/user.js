@@ -1,9 +1,10 @@
 class User {
-    constructor(name, id, team) {
+    constructor(name, email) {
       this.payment_history = new Array();
       this.name = name;
-      this.id = id;
-      this.team = team;
+      //this.id = id;
+      this.email = email;
+      this.team = null;
     }
     // Getters
     get name() {
