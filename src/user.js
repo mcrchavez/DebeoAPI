@@ -65,6 +65,8 @@ class User {
     owed(){
         //sum how much user is owed by others
     }
-   
+    toString(){
+        return "["+ this.name + " : " + this.email+ "]"; 
+    }
     
   }

@@ -30,4 +30,8 @@ class Team{
     has_user(email){
         return this.members.has(user)
     }
+
+    toString(){
+        
+    }
 }

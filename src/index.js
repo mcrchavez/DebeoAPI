@@ -12,4 +12,6 @@ function make2DArray(a, b) {
     }
     return arr;
 }
-team = new Team();
+turtleTeam = new Team("turtles", 0123);
+raph = new User("raph", "raph@turtles.com", turtleTeam);
+turtleTeam.add_user()
