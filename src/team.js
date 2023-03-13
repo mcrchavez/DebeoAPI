@@ -7,6 +7,9 @@ class Team{
         this.count = 0;
 
     }
+    toString(){
+        return "Team Name: " + this.name + this.members.entries.toString();
+    }
 
     set_admin(user){
         this.admin = user;
