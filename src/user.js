@@ -53,10 +53,10 @@ class User {
       this.payment_history.push(transaction);
     }
     toOwe(){
-
+        //sum how much user owes others
     }
     owed(){
-        
+        //sum how much user is owed by others
     }
    
     
