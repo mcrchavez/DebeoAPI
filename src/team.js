@@ -10,7 +10,7 @@ class Team{
     }
 
     get_user(email){
-        
+        return this.members.get(email);
     }
 
     get_members(){
