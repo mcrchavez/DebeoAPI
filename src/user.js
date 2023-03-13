@@ -1,7 +1,8 @@
 class User {
-    constructor(name, team) {
-      this.payment_history = null;
+    constructor(name, id, team) {
+      this.payment_history = new Array();
       this.name = name;
+      this.id = id;
       this.team = team;
     }
     // Getters
@@ -25,25 +26,28 @@ class User {
 
     // Methods
     join_team(team_id) {//needs additional checking
-      if(Teams.has(team_id) == false){
-        return false;
-      }
-      else{
-        
-      }
-
-    }
-    leave_team(team_id) {
-        if(Teams.has(team_id) == false){
+        if(Teams.at(team_id) === undefined){
             return false;
           }
           else{
-            
+            hold = Teams.at(team_id);
+            this.id = hold.length + 1;
+            hold.add_user(this);
+          }      
+
+    }
+    leave_team(team_id) {
+        if(Teams.at(team_id) === undefined){
+            return false;
+          }
+          else{
+            hold = Teams.at(team_id);
+            hold.remove_member(this.id);
           }      
     }
     //updates individual and group history accordingly
     add_transaction(transaction) {
-      
+      this.payment_history.push(transaction);
     }
     toOwe(){
 

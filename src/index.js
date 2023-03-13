@@ -1,6 +1,7 @@
-// program to create a two dimensional array
-const Teams = new Set();
+//Global variable for the collection of teams
+const Teams = new Array();
 
+// program to create a two dimensional array
 function make2DArray(a, b) {
     let arr = [];
     // create empty two dimensional array
