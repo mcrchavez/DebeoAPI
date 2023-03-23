@@ -1,11 +1,6 @@
 class User {
-<<<<<<< HEAD
-    constructor(name, email) {
-      this.payment_history = new Array();
-=======
     constructor(name, email, team) {
       this.payment_history = new Array();//past transactions stored as array //an array of transactions
->>>>>>> refs/remotes/origin/classes
       this.name = name;
       //this.id = id;
       this.email = email;
