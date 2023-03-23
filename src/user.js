@@ -1,6 +1,6 @@
 class User {
-    constructor(name, email, team) {
-      this.payment_history = new Array();//past transactions stored as array //an array of transactions
+    constructor(name, email) {
+      this.payment_history = new Array();
       this.name = name;
       //this.id = id;
       this.email = email;
